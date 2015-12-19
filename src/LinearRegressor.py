@@ -2,15 +2,13 @@
 
 import numpy as np
 
-class LinearRegressor(object):
-
-	def __init__():
+class LinearRegressor:
 
 	def fit(self, x, r):
 		alfa = 0.1
 		Ec = float('inf')
 		x0 = np.ones(5000) 
-		W = np.ones(10, 1)
+		W = np.ones((10, 1))
 		
 		x = np.insert(x, [0], x0, axis=1)	
 	

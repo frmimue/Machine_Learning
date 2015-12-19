@@ -14,14 +14,14 @@ r = data[:, 11]
 regressor = LinearRegressor()
 
 x_train = x[0:3000:1, :]
-r_train = r[0:3000:1, :]
+r_train = r[0:3000:1]
 regressor.fit(x_train, r_train)
 
 ##############################
 
 
 x_test = x[3000:5001:1, :]
-r_test = r[3000:5001:1, :]
+r_test = r[3000:5001:1]
 
 regressor.predict(x_test)
 
