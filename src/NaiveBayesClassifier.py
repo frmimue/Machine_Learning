@@ -24,6 +24,7 @@ class NaiveBayesClassifier:
         self.o2 = o2
 
     def predict(self, X):
+        #calculate probability using gaussian
         probability_negative = 1.0/(np.sqrt(2.0 * np.pi * self.o1)) * np.exp(-((X - self.u1) ** 2 / (2.0 * self.o1)))
         probability_positive = 1.0/(np.sqrt(2.0 * np.pi * self.o2)) * np.exp(-((X - self.u2) ** 2 / (2.0 * self.o2)))
 
