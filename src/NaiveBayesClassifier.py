@@ -10,11 +10,11 @@ class NaiveBayesClassifier:
         T1 = X[y == labels[0]]
         T2 = X[y == labels[1]]
 
-		#calculate mean
+        #calculate mean
         u1 = np.sum(T1, axis=0)/float(T1.shape[0])
         u2 = np.sum(T2, axis=0)/float(T2.shape[0])
 
-		#calculate variance
+        #calculate variance
         o1 = np.sum((T1 - u1) ** 2, axis=0)/float(T1.shape[0])
         o2 = np.sum((T2 - u2) ** 2, axis=0)/float(T2.shape[0])
 
